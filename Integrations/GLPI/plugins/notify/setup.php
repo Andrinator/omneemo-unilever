@@ -7,7 +7,7 @@ function plugin_init_notify() {
 
    $PLUGIN_HOOKS['csrf_compliant']['notify'] = true;
    $PLUGIN_HOOKS['item_add']['notify'] = [
-      'Computer' => 'plugin_item_update_notify'
+      'Monitor' => 'plugin_item_update_notify'
    ];
 
    $PLUGIN_HOOKS['item_add']['notify'] = [
