@@ -7,7 +7,9 @@ function plugin_init_notify() {
 
    $PLUGIN_HOOKS['csrf_compliant']['notify'] = true;
    $PLUGIN_HOOKS['item_add']['notify'] = [
-      'Computer' => 'plugin_item_update_notify',
+      'Item_SoftwareVersion' => 'plugin_item_add_notify',
+      'Computer_Item_SoftwareVersion' => 'plugin_item_add_notify',
+      'Computer' => 'plugin_item_add_notify',
       'Computer_Software' => 'plugin_item_add_notify',
       'Computer_SoftwareVersion' => 'plugin_item_add_notify',
       'Software' => 'plugin_item_add_notify',
@@ -18,6 +20,8 @@ function plugin_init_notify() {
    ];
 
    $PLUGIN_HOOKS['item_update']['notify'] = [
+      'Item_SoftwareVersion' => 'plugin_item_update_notify',
+      'Computer_Item_SoftwareVersion' => 'plugin_item_update_notify',
       'Computer' => 'plugin_item_update_notify',
       'Computer_Software' => 'plugin_item_update_notify',
       'Computer_SoftwareVersion' => 'plugin_item_update_notify',
