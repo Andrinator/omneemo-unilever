@@ -54,3 +54,11 @@ function plugin_notify_uninstall() {
    }
    return true;
 }
+
+function plugin_item_update_notify($parm) {
+
+   global $DB;
+   $query = "INSERT INTO glpi_plugin_notify_config (name) VALUES ('Test')";
+   $DB->queryOrDie($query, $DB->error());
+
+}
