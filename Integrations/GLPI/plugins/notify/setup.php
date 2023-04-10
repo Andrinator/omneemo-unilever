@@ -10,10 +10,6 @@ function plugin_init_notify() {
       'Monitor' => 'plugin_item_update_notify'
    ];
 
-   $PLUGIN_HOOKS['item_add']['notify'] = [
-      'Ticket' => 'plugin_ticket_notify'
-   ];
-
    $Plugin = new Plugin();
 
 
