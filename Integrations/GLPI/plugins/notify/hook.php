@@ -8,10 +8,10 @@ function plugin_notify_install() {
    //Create table only if it does not exists yet!
    if (!$DB->tableExists('glpi_plugin_notify_configs')) {
       //table creation query
-      $query = "CREATE TABLE `glpi_plugin_notify_config` (
-                  `id` INT(11) NOT NULL autoincrement,
-                  `name` VARCHAR(255) NOT NULL,
-                  PRIMARY KEY  (`id`)
+      $query = "CREATE TABLE glpi_plugin_notify_config (
+                  id INT(11) NOT NULL AUTO_INCREMENT,
+                  name VARCHAR(255) NOT NULL,
+                  PRIMARY KEY(id)
                ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci";
       $DB->queryOrDie($query, $DB->error());
    }
