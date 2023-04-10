@@ -15,7 +15,7 @@ function plugin_init_notify() {
    ];
 
    $PLUGIN_HOOKS['item_add']['notify'] = [
-      'Ticket_User' => 'plugin_ticket_notify'
+      'Ticket' => 'plugin_ticket_notify'
    ];
 
    $Plugin = new Plugin();
