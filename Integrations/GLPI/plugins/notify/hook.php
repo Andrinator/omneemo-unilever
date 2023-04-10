@@ -58,20 +58,13 @@ function plugin_notify_uninstall() {
 function plugin_item_update_notify($parm) {
    global $DB;
 
-   $query = "INSERT INTO glpi_plugin_notify_config (name) VALUES ('Test')";
+   $query = "INSERT INTO glpi_plugin_notify_config (name) VALUES ('TestUpdate')";
    $DB->queryOrDie($query, $DB->error());
 }
 
 function plugin_item_add_notify($parm) {
    global $DB;
 
-   $query = "INSERT INTO glpi_plugin_notify_config (name) VALUES ('Test')";
-   $DB->queryOrDie($query, $DB->error());
-}
-
-function plugin_ticket_notify($parm) {
-   global $DB;
-
-   $query = "INSERT INTO glpi_plugin_notify_config (name) VALUES ('Test')";
+   $query = "INSERT INTO glpi_plugin_notify_config (name) VALUES ('TestAdd')";
    $DB->queryOrDie($query, $DB->error());
 }
