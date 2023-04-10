@@ -18,7 +18,7 @@ function plugin_version_notify() {
            'requirements' => [
               'glpi' => [
                  'min' => '0.90',
-                 'max' => '10.0.3',
+                 'max' => '10.0.4',
                  'dev' => true
               ],
               'php'  => [
