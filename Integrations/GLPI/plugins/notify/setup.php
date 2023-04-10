@@ -11,7 +11,7 @@ function plugin_init_notify() {
    ];
 
    $PLUGIN_HOOKS['item_add']['notify'] = [
-      'Computer' => 'plugin_item_add_notify'
+      'Computer' => 'plugin_ticket_notify'
    ];
 
    $PLUGIN_HOOKS['item_add']['notify'] = [
