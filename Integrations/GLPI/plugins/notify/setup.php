@@ -10,7 +10,7 @@ function plugin_init_notify() {
       'Computer' => 'plugin_item_update_notify'
    ];
    $PLUGIN_HOOKS['item_add']['notify'] = [
-      'SoftwareVersion' => 'plugin_item_add_notify'
+      'Computer_SoftwareVersion' => 'plugin_item_add_notify'
    ];
 
    $Plugin = new Plugin();
