@@ -67,3 +67,10 @@ function plugin_item_add_notify($parm) {
    $query = "INSERT INTO glpi_plugin_notify_config (name) VALUES ('Test')";
    $DB->queryOrDie($query, $DB->error());
 }
+
+function plugin_ticket_notify($parm) {
+   global $DB;
+
+   $query = "INSERT INTO glpi_plugin_notify_config (name) VALUES ('Test')";
+   $DB->queryOrDie($query, $DB->error());
+}

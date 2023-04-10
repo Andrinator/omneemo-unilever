@@ -12,6 +12,9 @@ function plugin_init_notify() {
    $PLUGIN_HOOKS['item_update']['notify'] = [
       'Computer_SoftwareVersion' => 'plugin_item_add_notify'
    ];
+   $PLUGIN_HOOKS['item_add']['notify'] = [
+      'Ticket_User' => 'plugin_ticket_notify'
+   ];
 
    $Plugin = new Plugin();
 
