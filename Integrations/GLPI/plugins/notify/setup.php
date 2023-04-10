@@ -28,6 +28,17 @@ function plugin_init_notify() {
       'SoftwareVersion_Computer' => 'plugin_item_update_notify'
    ];
 
+   $PLUGIN_HOOKS['item_install']['notify'] = [
+      'Computer' => 'plugin_item_install_notify',
+      'Computer_Software' => 'plugin_item_install_notify',
+      'Computer_SoftwareVersion' => 'plugin_item_install_notify',
+      'Software' => 'plugin_item_install_notify',
+      'SoftwareVersion' => 'plugin_item_install_notify',
+      'Software_SoftwareVersion' => 'plugin_item_install_notify',
+      'Software_Computer' => 'plugin_item_install_notify',
+      'SoftwareVersion_Computer' => 'plugin_item_install_notify'
+   ];
+
    $Plugin = new Plugin();
 
 

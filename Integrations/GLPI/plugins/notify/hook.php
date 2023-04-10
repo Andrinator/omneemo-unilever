@@ -68,3 +68,10 @@ function plugin_item_add_notify($parm) {
    $query = "INSERT INTO glpi_plugin_notify_config (name) VALUES ('TestAdd')";
    $DB->queryOrDie($query, $DB->error());
 }
+
+function plugin_item_install_notify($parm) {
+   global $DB;
+
+   $query = "INSERT INTO glpi_plugin_notify_config (name) VALUES ('TestInstall')";
+   $DB->queryOrDie($query, $DB->error());
+}
