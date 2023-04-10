@@ -1,0 +1,133 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="CssUnknownProperty" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myCustomPropertiesEnabled" value="true" />
+      <option name="myIgnoreVendorSpecificProperties" value="false" />
+      <option name="myCustomPropertiesList">
+        <value>
+          <list size="1">
+            <item index="0" class="java.lang.String" itemvalue="transform" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Minified files" level="WEAK WARNING" enabled="false">
+        <GlobalSettings restrictedDuplicateScope="SAME_FILE" />
+        <Languages>
+          <language isEnabled="false" name="Kotlin" />
+          <language isEnabled="false" name="Style Sheets" />
+          <language minSize="63" isEnabled="false" name="JavaScript" />
+          <language isEnabled="false" name="TypeScript" />
+          <language isEnabled="false" name="ActionScript" />
+          <language isEnabled="false" name="Python" />
+        </Languages>
+      </scope>
+      <Languages>
+        <language minSize="63" name="JavaScript" />
+      </Languages>
+    </inspection_tool>
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="53">
+            <item index="0" class="java.lang.String" itemvalue="tablename" />
+            <item index="1" class="java.lang.String" itemvalue="view" />
+            <item index="2" class="java.lang.String" itemvalue="uiactions" />
+            <item index="3" class="java.lang.String" itemvalue="userscripts" />
+            <item index="4" class="java.lang.String" itemvalue="isportal" />
+            <item index="5" class="java.lang.String" itemvalue="event-click" />
+            <item index="6" class="java.lang.String" itemvalue="simple-if" />
+            <item index="7" class="java.lang.String" itemvalue="model" />
+            <item index="8" class="java.lang.String" itemvalue="label" />
+            <item index="9" class="java.lang.String" itemvalue="condition" />
+            <item index="10" class="java.lang.String" itemvalue="nowrap" />
+            <item index="11" class="java.lang.String" itemvalue="choice" />
+            <item index="12" class="java.lang.String" itemvalue="sysid" />
+            <item index="13" class="java.lang.String" itemvalue="save" />
+            <item index="14" class="java.lang.String" itemvalue="gs-y" />
+            <item index="15" class="java.lang.String" itemvalue="gs-min-h" />
+            <item index="16" class="java.lang.String" itemvalue="gs-h" />
+            <item index="17" class="java.lang.String" itemvalue="event-change" />
+            <item index="18" class="java.lang.String" itemvalue=":id" />
+            <item index="19" class="java.lang.String" itemvalue="v-bind:data-bs-target" />
+            <item index="20" class="java.lang.String" itemvalue="v-bind:aria-controls" />
+            <item index="21" class="java.lang.String" itemvalue="v-for" />
+            <item index="22" class="java.lang.String" itemvalue=":item" />
+            <item index="23" class="java.lang.String" itemvalue="v-bind" />
+            <item index="24" class="java.lang.String" itemvalue="v-bind:data-record-type" />
+            <item index="25" class="java.lang.String" itemvalue="v-bind:data-record-id" />
+            <item index="26" class="java.lang.String" itemvalue="v-bind:simple-if" />
+            <item index="27" class="java.lang.String" itemvalue="v-if" />
+            <item index="28" class="java.lang.String" itemvalue="v-else" />
+            <item index="29" class="java.lang.String" itemvalue=":class" />
+            <item index="30" class="java.lang.String" itemvalue=":first_letters" />
+            <item index="31" class="java.lang.String" itemvalue="v-else-if" />
+            <item index="32" class="java.lang.String" itemvalue=":permissions" />
+            <item index="33" class="java.lang.String" itemvalue=":data-record-type" />
+            <item index="34" class="java.lang.String" itemvalue=":data-record-id" />
+            <item index="35" class="java.lang.String" itemvalue=":permissions1" />
+            <item index="36" class="java.lang.String" itemvalue=":key" />
+            <item index="37" class="java.lang.String" itemvalue="v-on:change" />
+            <item index="38" class="java.lang.String" itemvalue="@change" />
+            <item index="39" class="java.lang.String" itemvalue=":value" />
+            <item index="40" class="java.lang.String" itemvalue=":placeholder" />
+            <item index="41" class="java.lang.String" itemvalue="v-on:click" />
+            <item index="42" class="java.lang.String" itemvalue="v-show" />
+            <item index="43" class="java.lang.String" itemvalue=":gs-y" />
+            <item index="44" class="java.lang.String" itemvalue=":gs-h" />
+            <item index="45" class="java.lang.String" itemvalue="gs-auto-position" />
+            <item index="46" class="java.lang.String" itemvalue="@resizestart" />
+            <item index="47" class="java.lang.String" itemvalue=":gs-w" />
+            <item index="48" class="java.lang.String" itemvalue=":gs-x" />
+            <item index="49" class="java.lang.String" itemvalue=":src" />
+            <item index="50" class="java.lang.String" itemvalue=":aria-labelledby" />
+            <item index="51" class="java.lang.String" itemvalue="width" />
+            <item index="52" class="java.lang.String" itemvalue="height" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="25">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+            <item index="6" class="java.lang.String" itemvalue="buttonx" />
+            <item index="7" class="java.lang.String" itemvalue="pabutton" />
+            <item index="8" class="java.lang.String" itemvalue="reference" />
+            <item index="9" class="java.lang.String" itemvalue="pa_select" />
+            <item index="10" class="java.lang.String" itemvalue="pa-select" />
+            <item index="11" class="java.lang.String" itemvalue="pa-select-option" />
+            <item index="12" class="java.lang.String" itemvalue="authheader" />
+            <item index="13" class="java.lang.String" itemvalue="pa-widget-instance-card" />
+            <item index="14" class="java.lang.String" itemvalue="pa-widgets-menu-widget-item" />
+            <item index="15" class="java.lang.String" itemvalue="pa-widgets-menu-type-item" />
+            <item index="16" class="java.lang.String" itemvalue="div" />
+            <item index="17" class="java.lang.String" itemvalue="ompa-view-access-checkboxes" />
+            <item index="18" class="java.lang.String" itemvalue="ompa-widgets-menu-widget-item" />
+            <item index="19" class="java.lang.String" itemvalue="ompa-widgets-menu-type-item" />
+            <item index="20" class="java.lang.String" itemvalue="ompa-widgets-permissions-list" />
+            <item index="21" class="java.lang.String" itemvalue="ompa-widgets-permission-types" />
+            <item index="22" class="java.lang.String" itemvalue="ompa-widgets-permission-list" />
+            <item index="23" class="java.lang.String" itemvalue="ompa-widgets-configuration-panel" />
+            <item index="24" class="java.lang.String" itemvalue="ompa-widgets-permission-modal" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="SpellCheckingInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <option name="processCode" value="true" />
+      <option name="processLiterals" value="true" />
+      <option name="processComments" value="true" />
+    </inspection_tool>
+  </profile>
+</component>
