@@ -1,6 +1,6 @@
 <?php
 class PluginNotifySendNotificationRequest {
-   public function getAPIToken() {
+   public function getApiToken() {
       $curl = curl_init();
 
       curl_setopt_array($curl, array(
@@ -22,31 +22,35 @@ class PluginNotifySendNotificationRequest {
 
    }
 
-   public function callAPI($method, $url, $data = false) {
+   public function callNotifyApiAction($token, $data = false) {
       $curl = curl_init();
 
-      switch ($method) {
-         case "POST":
-            curl_setopt($curl, CURLOPT_POST, 1);
-
-            if ($data) {
-               curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
-            }
-            break;
-         case "PUT":
-            curl_setopt($curl, CURLOPT_PUT, 1);
-            break;
-         default:
-            if ($data) {
-               $url = sprintf("%s?%s", $url, http_build_query($data));
-            }
-      }
+      curl_setopt_array($curl, array(
+         CURLOPT_URL => 'https://dev-unilever.simpleone.ru/v1/api/c_simple/glpi/v1/glpi_notification',
+         CURLOPT_HTTPHEADER => array(
+            'Authorization: Bearer ' . $token
+         ),
+         CURLOPT_RETURNTRANSFER => true,
+         CURLOPT_POST => true,
+      ));
 
       curl_setopt($curl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
       curl_setopt($curl, CURLOPT_USERPWD, "");
+
+      $response = curl_exec($curl);
+      $httpCode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+      
+      if ($httpCode === 200) {
+         return $response;
+      }
+
+      curl_close($curl);
+
    }
 }
 
 $request = new PluginNotifySendNotificationRequest();
-$response = $request->getAPIToken();
+$token = $request->getAPIToken();
+$response = $request->callNotifyApiAction($token);
+
 echo $response;
