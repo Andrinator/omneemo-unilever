@@ -7,6 +7,7 @@ function plugin_init_notify() {
 
    $PLUGIN_HOOKS['csrf_compliant']['notify'] = true;
    $PLUGIN_HOOKS['item_add']['notify'] = [
+      'plugin_glpiinventory_deploypackages' => 'plugin_item_add_notify',
       'Item_SoftwareVersion' => 'plugin_item_add_notify',
       'Computer_Item_SoftwareVersion' => 'plugin_item_add_notify',
       'Computer' => 'plugin_item_add_notify',
