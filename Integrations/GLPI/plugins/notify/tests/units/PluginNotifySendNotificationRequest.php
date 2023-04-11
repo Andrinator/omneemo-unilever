@@ -1,5 +1,4 @@
 <?php
-echo 1;
 class PluginNotifySendNotificationRequest {
    public function getAPIToken() {
       $curl = curl_init();
@@ -20,9 +19,13 @@ class PluginNotifySendNotificationRequest {
       ));
 
       $response = curl_exec($curl);
+      $httpCode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+
+      echo $httpCode;
+      $authToken = json_decode($response)->{'data'}->{'auth_key'};
 
       curl_close($curl);
-      return $response;
+      return $authToken;
    }
 
    public function callAPI($method, $url, $data = false) {

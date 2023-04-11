@@ -1,5 +1,4 @@
 <?php
-echo 1;
 class PluginNotifySendNotificationRequest extends CommonDBTM {
    public function getAPIToken() {
       $curl = curl_init();
@@ -49,7 +48,3 @@ class PluginNotifySendNotificationRequest extends CommonDBTM {
       curl_setopt($curl, CURLOPT_USERPWD, "");
    }
 }
-
-$request = new PluginNotifySendNotificationRequest();
-$response = $request->getAPIToken();
-echo $response;
