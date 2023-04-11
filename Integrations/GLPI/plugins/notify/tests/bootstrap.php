@@ -10,16 +10,16 @@ include_once GLPI_ROOT . '/tests/DbTestCase.php';
 
 $plugin = new \Plugin();
 $plugin->checkStates(true);
-$plugin->getFromDBbyDir('myplugin');
+$plugin->getFromDBbyDir('notify');
 
 if (!plugin_myplugin_check_prerequisites()) {
    echo "\nPrerequisites are not met!";
    die(1);
 }
 
-if (!$plugin->isInstalled('myplugin')) {
+if (!$plugin->isInstalled('notify')) {
    $plugin->install($plugin->getID());
 }
-if (!$plugin->isActivated('myplugin')) {
+if (!$plugin->isActivated('notify')) {
    $plugin->activate($plugin->getID());
 }
