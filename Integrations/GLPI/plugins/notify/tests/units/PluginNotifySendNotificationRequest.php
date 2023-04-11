@@ -6,16 +6,8 @@ class PluginNotifySendNotificationRequest {
       curl_setopt_array($curl, array(
          CURLOPT_URL => 'https://dev-unilever.simpleone.ru/v1/auth/login',
          CURLOPT_RETURNTRANSFER => true,
-         CURLOPT_ENCODING => '',
-         CURLOPT_MAXREDIRS => 10,
-         CURLOPT_TIMEOUT => 0,
-         CURLOPT_FOLLOWLOCATION => true,
-         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-         CURLOPT_CUSTOMREQUEST => 'POST',
+         CURLOPT_POST => true,
          CURLOPT_POSTFIELDS => array('username' => 'a.miroshnikov','password' => 'j^7j.?Y)%\\9c(4_n'),
-         CURLOPT_HTTPHEADER => array(
-            'Cookie: SERVERID=srv-ngkdi10mECnZ8+wEmeqLOA|ZDV3v'
-         ),
       ));
 
       $response = curl_exec($curl);
@@ -27,7 +19,7 @@ class PluginNotifySendNotificationRequest {
       }
 
       curl_close($curl);
-      
+
    }
 
    public function callAPI($method, $url, $data = false) {
