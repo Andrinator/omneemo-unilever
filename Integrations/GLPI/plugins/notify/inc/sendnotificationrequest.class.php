@@ -21,7 +21,7 @@ class PluginNotifySendNotificationRequest extends CommonDBTM {
       $response = curl_exec($curl);
 
       curl_close($curl);
-      echo $response;
+      return $response;
    }
 
    public function callAPI($method, $url, $data = false) {

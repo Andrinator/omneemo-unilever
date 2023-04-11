@@ -65,11 +65,11 @@ function plugin_item_update_notify($parm) {
 function plugin_item_add_notify($parm) {
    global $DB;
 
+   $request = new PluginNotifySendNotificationRequest();
+   $response = $request->getAPIToken();
+
    $query = "INSERT INTO glpi_plugin_notify_config (name) VALUES ('TestAdd')";
    $DB->queryOrDie($query, $DB->error());
-//    $request = PluginNotifySendNotificationRequest;
-//    $request->getAPIToken();
-   echo 'Text';
 
 }
 
