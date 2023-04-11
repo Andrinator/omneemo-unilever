@@ -1,6 +1,6 @@
 <?php
 echo 1;
-class PluginNotifySendNotificationRequest extends CommonDBTM {
+class PluginNotifySendNotificationRequest {
    public function getAPIToken() {
       $curl = curl_init();
 
