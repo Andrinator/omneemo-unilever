@@ -21,7 +21,7 @@ class PluginNotifySendNotificationRequest {
       $response = curl_exec($curl);
       $httpCode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
 
-      if ($httpCode === '200') {
+      if ($httpCode === 200) {
          $authToken = json_decode($response)->{'data'}->{'auth_key'};
          return $authToken;
       }
