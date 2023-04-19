@@ -2,6 +2,7 @@
 
 function plugin_restapiconnector_install() {
 
+   echo "<div>Testestestestewtwerqeqdqwdqwqwdqdqwdqdqdq</div>";
    ini_set("max_execution_time", "0");
 
    $migrationname = 'Migration';
