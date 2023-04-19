@@ -5,8 +5,9 @@ function pluginRestapiconnectorInstall($version, $migrationname = 'Migration') {
 
    $migration = new $migrationname($version);
 
-   require_once(PLUGIN_RESTAPICONNECTOR_DIR . '/inc/credential.class.php');
    require_once(PLUGIN_RESTAPICONNECTOR_DIR . '/inc/endpoint.class.php');
+   echo "<div>Test</div>";
+   require_once(PLUGIN_RESTAPICONNECTOR_DIR . '/inc/credential.class.php');
    require_once(PLUGIN_RESTAPICONNECTOR_DIR . '/inc/rule.class.php');
    foreach (glob(PLUGIN_RESTAPICONNECTOR_DIR . '/inc/*.php') as $file) {
       require_once($file);

@@ -45,24 +45,24 @@ class PluginRestapiconnectorEndpoint extends CommonDBTM {
          'name'  => __('Endpoint', 'restapiconnector');
       ];
 
-      $tab[] = [
-         'id'            => '4',
-         'table'         => PluginRestapiconnectorCredential::getTable(),
-         'field'         => 'name',
-         'datatype'      => 'dropdown',
-         'right'         => 'all',
-         'name'          => PluginRestapiconnectorCredential::getTypeName(1),
-         'forcegroupby'  => true,
-         'massiveaction' => false,
-         'joinparams'    => [
-            'beforejoin' => [
-               'table'      => PluginRestapiconnectorEndpoint_PluginRestapiconnectorEndpoint::getTable(),
-               'joinparams' => [
-                  'jointype'   => 'child',
-               ],
-            ],
-         ],
-      ];
+//       $tab[] = [
+//          'id'            => '4',
+//          'table'         => PluginRestapiconnectorCredential::getTable(),
+//          'field'         => 'name',
+//          'datatype'      => 'dropdown',
+//          'right'         => 'all',
+//          'name'          => PluginRestapiconnectorCredential::getTypeName(1),
+//          'forcegroupby'  => true,
+//          'massiveaction' => false,
+//          'joinparams'    => [
+//             'beforejoin' => [
+//                'table'      => PluginRestapiconnectorEndpoint_PluginRestapiconnectorEndpoint::getTable(),
+//                'joinparams' => [
+//                   'jointype'   => 'child',
+//                ],
+//             ],
+//          ],
+//       ];
 
       return $tab;
 
