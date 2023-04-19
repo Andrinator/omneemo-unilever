@@ -2,7 +2,6 @@
 
 class PluginRestapiconnectorEndpoint extends CommonDBTM {
 
-   echo '<div>Testtestest</div>';
    public $dohistory = true;
    public static $rightname = 'plugin_restapiconnector_endpoint';
 
