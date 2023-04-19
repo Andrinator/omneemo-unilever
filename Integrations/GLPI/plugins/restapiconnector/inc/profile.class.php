@@ -1,11 +1,11 @@
 <?php
 
-class PluginAssetAssistantProfile extends Profile {
+class PluginRestapiconnectorProfile extends Profile {
 
    public static $rightname = 'config';
 
    public function getTabNameForItem(CommonGLPI $item, $withtemplate = 0) {
-      return self::createTabEntry('Asset Assistant');
+      return self::createTabEntry('REST API Connector');
    }
 
    public static function displayTabContentForItem(CommonGLPI $item, $tabnum = 1, $withtemplate = 0) {
@@ -34,7 +34,7 @@ class PluginAssetAssistantProfile extends Profile {
       $rights = $this->getRightsGeneral();
       $profile->displayRightsChoiceMatrix($rights, ['canedit'       => $canedit,
                                                     'default_class' => 'tab_bg_2',
-                                                    'title'         => __('General', 'assetassistant')
+                                                    'title'         => __('General', 'restapiconnector')
                                                    ]);
 
       if ($canedit && $closeform) {
@@ -90,13 +90,13 @@ class PluginAssetAssistantProfile extends Profile {
    public function getRightsGeneral() {
       $rights = [
          ['rights'    => [READ => __('Read')],
-          'label'     => __('Menu', 'assetassistant'),
-          'field'     => 'plugin_assetassistant_menu'
+          'label'     => __('Menu', 'restapiconnector'),
+          'field'     => 'plugin_restapiconnector_menu'
          ],
          ['rights'    => [READ => __('Read'), UPDATE => __('Update')],
-          'itemtype'  => 'PluginAssetAssistantConfig',
-          'label'     => __('Configuration', 'assetassistant'),
-          'field'     => 'plugin_assetassistant_configuration'
+          'itemtype'  => 'PluginRestapiconnectorConfig',
+          'label'     => __('Configuration', 'restapiconnector'),
+          'field'     => 'plugin_restapiconnector_configuration'
          ]
       ];
 

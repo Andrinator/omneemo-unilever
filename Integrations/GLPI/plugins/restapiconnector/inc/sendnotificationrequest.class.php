@@ -1,5 +1,6 @@
 <?php
-class PluginNotifySendNotificationRequest extends CommonDBTM {
+
+class PluginRestapiconnectorSendNotificationRequest extends CommonDBTM {
    public function getApiToken() {
       $curl = curl_init();
 
