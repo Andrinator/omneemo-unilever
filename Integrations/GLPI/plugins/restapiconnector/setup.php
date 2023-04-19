@@ -40,7 +40,7 @@ function plugin_init_restapiconnector() {
 
 function plugin_version_restapiconnector() {
    return ['name'         => 'REST API Connector',
-           'version'      => RESTAPICONNECTOR_VERSION,
+           'version'      => PLUGIN_RESTAPICONNECTOR_VERSION,
            'author'       => 'Andrew Miroshnikov',
            'license'      => 'GPLv3',
            'homepage'     => '',

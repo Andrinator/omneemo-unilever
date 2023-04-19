@@ -22,5 +22,5 @@ class PluginRestapiconnectorSetup {
          return $user['id'];
       }
    }
-   
+
 }
