@@ -68,17 +68,17 @@ class PluginRestapiconnectorEndpoint extends CommonDBTM {
 
    }
 
-   public function defineTabs($options = []) {
-      $onglets = [];
-      $this->addDefaultFormTab($onglets);
-      $this->addStandardTab('Log', $onglets, $options);
-      return $onglets;
-   }
-
-   public function showForm($id, array $options = []) {
-      $this->initForm($id, $options);
-      TemplateRenderer::getInstance()->display('');
-   }
+//    public function defineTabs($options = []) {
+//       $onglets = [];
+//       $this->addDefaultFormTab($onglets);
+//       $this->addStandardTab('Log', $onglets, $options);
+//       return $onglets;
+//    }
+//
+//    public function showForm($id, array $options = []) {
+//       $this->initForm($id, $options);
+//       TemplateRenderer::getInstance()->display('');
+//    }
 
 
 }
