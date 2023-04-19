@@ -16,7 +16,6 @@ function plugin_glpiinventory_script_endswith($scriptname) {
 function plugin_init_restapiconnector() {
    global $PLUGIN_HOOKS, $CFG_GLPI, $PF_CONFIG;
 
-   echo '<div>Testtestest</div>';
    $PLUGIN_HOOKS['csrf_compliant']['restapiconnector'] = true;
 
    $plugin = new Plugin();
