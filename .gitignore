@@ -1,3 +1,4 @@
 /Integrations/GLPI/plugins/glpiinventory
 /Integrations/GLPI/plugins/webhook
 /Integrations/GLPI/glpi_root
+/venv

@@ -1,5 +1,5 @@
 <?php
-class PluginNotifySendNotificationRequest {
+class PluginNotifySendNotificationRequest extends CommonDBTM {
    public function getApiToken() {
       $curl = curl_init();
 
@@ -39,7 +39,7 @@ class PluginNotifySendNotificationRequest {
 
       $response = curl_exec($curl);
       $httpCode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
-      
+
       if ($httpCode === 200) {
          return $response;
       }
@@ -48,9 +48,3 @@ class PluginNotifySendNotificationRequest {
 
    }
 }
-
-$request = new PluginNotifySendNotificationRequest();
-$token = $request->getAPIToken();
-$response = $request->callNotifyApiAction($token);
-
-echo $response;
