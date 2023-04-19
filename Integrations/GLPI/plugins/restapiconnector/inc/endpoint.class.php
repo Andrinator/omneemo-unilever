@@ -1,10 +1,8 @@
 <?php
 
-use Glpi\Application\View\TemplateRenderer;
-
 class PluginRestapiconnectorEndpoint extends CommonDBTM {
    public $dohistory = true;
-   public static $rightname = 'plugin_restapiconnector_enddpoint';
+   public static $rightname = 'plugin_restapiconnector_endpoint';
 
    public static function canCreate() {
       return true;
