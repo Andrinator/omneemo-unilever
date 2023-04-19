@@ -19,12 +19,7 @@ function plugin_init_restapiconnector() {
    $PLUGIN_HOOKS['csrf_compliant']['restapiconnector'] = true;
 
    $plugin = new Plugin();
-   $moduleId = 0;
    $debug_mode = true;
-
-   if (isset($_SESSION['glpi_use_mode'])) {
-      $debug_mode = ($_SESSION['glpi_use_mode'] == Session::DEBUG_MODE);
-   }
 
    if ($plugin->isActivated('restapiconnector')) {
       $plugin->registerClass('PluginRestapiconnectorConfig');
@@ -33,15 +28,10 @@ function plugin_init_restapiconnector() {
       $plugin->registerClass('PluginRestapiconnectorRule');
 
       $plugin->getFromDBbyDir('restapiconnector');
-      $moduleId = $plugin->fields['id'];
 
       PluginRestapiconnectorConfig::loadCache();
 
-   } else {
-      include_once(PLUGIN_RESTAPICONNECTOR_DIR . '/inc/module.class.php');
-      $moduleId = PluginRestapiconnectorModule::getModuleId('restapiconnector');
    }
-
 
    $PLUGIN_HOOKS['menu_toadd']['restapiconnector']['admin'] = 'PluginRestapiconnectorMenu';
 

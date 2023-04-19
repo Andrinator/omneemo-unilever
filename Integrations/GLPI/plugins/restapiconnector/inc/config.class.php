@@ -119,14 +119,6 @@ class PluginRestapiconnectorConfig extends CommonDBTM {
 
    }
 
-//    public static function getActions($action) {
-//       switch ($action) {
-//          case self::ACTION_STATUS:
-//             return __('Change the statis', 'restapiconnector');
-//          case self::ACTION_CLEAN
-//       }
-//    }
-
    public function addValue($name, $value) {
       $existing_value = $this->getValue($name);
       if (!is_null($existing_value)) {
