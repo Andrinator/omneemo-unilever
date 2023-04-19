@@ -5,7 +5,6 @@ function pluginRestapiconnectorInstall($version, $migrationname = 'Migration') {
 
    $migration = new $migrationname($version);
 
-   require_once(PLUGIN_RESTAPICONNECTOR_DIR . '/inc/commonview.class.php');
    require_once(PLUGIN_RESTAPICONNECTOR_DIR . '/inc/credential.class.php');
    require_once(PLUGIN_RESTAPICONNECTOR_DIR . '/inc/endpoint.class.php');
    require_once(PLUGIN_RESTAPICONNECTOR_DIR . '/inc/rule.class.php');
@@ -15,7 +14,7 @@ function pluginRestapiconnectorInstall($version, $migrationname = 'Migration') {
 
    $migration->displayMessage("REST API Connector plugin installation");
    $migration->displayMessage("Creation tables in database");
-   $DB_file = PLUGIN_GLPI_INVENTORY_DIR . "/install/mariadb/plugin_restapiconnector-empty.sql";
+   $DB_file = PLUGIN_RESTAPICONNECTOR_DIR . "/install/mariadb/plugin_restapiconnector-empty.sql";
    if (!$DB->runFile($DB_file)) {
       $migration->displayMessage("Error on creation tables in database");
    }
